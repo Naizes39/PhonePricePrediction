@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Price Prediction</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <div class="phone-mockup">
+        <div class="form-container">
+            <h1 class="title">Phone Price</br>Prediction</h1>
+            <form id="predictionForm">
+                <div class="input-group">
+                    <label for="company">Company:</label>
+                    <select id="company" name="company">
+                        <option value="other">Other</option>
+                        <option value="coolpad">Coolpad</option>
+                        <option value="gionee">Gionee</option>
+                        <option value="google">Google</option>
+                        <option value="honor">Honor</option>
+                        <option value="huawei">Huawei</option>
+                        <option value="iqoo">iQOO</option>
+                        <option value="itel">itel</option>
+                        <option value="lg">LG</option>
+                        <option value="lava">Lava</option>
+                        <option value="lenovo">Lenovo</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="oppo">Oppo</option>
+                        <option value="oneplus">OnePlus</option>
+                        <option value="poco">Poco</option>
+                        <option value="realme">Realme</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="tcl">TCL</option>
+                        <option value="tecno">Tecno</option>
+                        <option value="vivo">Vivo</option>
+                        <option value="xiaomi">Xiaomi</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="ram">RAM (GB):</label>
+                    <input type="number" id="ram" name="ram" min="1" max="24" step="1" placeholder="1-24GB" required>
+                </div>
+                <div class="input-group">
+                    <label for="battery">Battery (mAh):</label>
+                    <input type="number" id="battery" name="battery" min="300" max="21000" step="100" placeholder="300-21000mAh" required>
+                </div>
+                <div class="input-group">
+                    <label for="display">Display (inches):</label>
+                    <input type="number" id="display" name="display" min="1.8" max="7.6" step="0.1" placeholder="1.8-7.6in" required>
+                </div>
+                <div class="input-group">
+                    <label for="externalMemory">External Memory (GB):</label>
+                    <input type="number" id="externalMemory" name="externalMemory" min="0" max="1000" step="1" placeholder="0-1000GB" required>
+                </div>
+                <div class="input-group">
+                    <label for="inbuiltMemory">Inbuilt Memory (GB):</label>
+                    <input type="number" id="inbuiltMemory" name="inbuiltMemory" min="16" max="1024" step="16" placeholder="16-1024GB" required>
+                </div>
+                <div class="input-group">
+                    <label for="androidVersion">Android Version:</label>
+                    <input type="number" id="androidVersion" name="androidVersion" min="6" max="14" step="1" placeholder="6-14" required>
+                </div>
+                <div class="input-group">
+                    <label for="fastCharging">Fast Charging (W):</label>
+                    <input type="number" id="fastCharging" name="fastCharging" min="0" max="240" step="10" placeholder="0-240W" required>
+                </div>
+                <div class="input-group">
+                    <label for="totalRearMP">Total Rear Cameras (Megapixels):</label>
+                    <input type="number" id="totalRearMP" name="totalRearMP" min="8" max="272" step="1" placeholder="8-272MP" required>
+                </div>
+                <div class="input-group">
+                    <label for="numRearCameras">Number of Rear Cameras:</label>
+                    <input type="number" id="numRearCameras" name="numRearCameras" min="1" max="9" step="1" placeholder="1-9" required>
+                </div>
+                <div class="input-group">
+                    <label for="maxRearMP">Max Rear Camera (Megapixels):</label>
+                    <input type="number" id="maxRearMP" name="maxRearMP" min="8" max="200" step="1" placeholder="8-200MP" required>
+                </div>
+                <div class="input-group">
+                    <label for="totalFrontMP">Total Front Cameras (Megapixels):</label>
+                    <input type="number" id="totalFrontMP" name="totalFrontMP" min="4" max="60" step="1" placeholder="4-60MP" required>
+                </div>
+                <div class="input-group">
+                    <label for="numFrontCameras">Number of Front Cameras:</label>
+                    <input type="number" id="numFrontCameras" name="numFrontCameras" min="1" max="2" step="1" placeholder="1-2" required>
+                </div>
+                <div class="input-group">
+                    <label for="maxFrontMP">Max Front Camera (Megapixels):</label>
+                    <input type="number" id="maxFrontMP" name="maxFrontMP" min="4" max="60" step="1" placeholder="4-60MP" required>
+                </div>
+                <div class="input-group">
+                    <label for="screenWidth">Screen Width (pixels):</label>
+                    <input type="number" id="screenWidth" name="screenWidth" min="720" max="3200" step="10" placeholder="720-3200px" required>
+                </div>
+                <div class="input-group">
+                    <label for="screenHeight">Screen Height (pixels):</label>
+                    <input type="number" id="screenHeight" name="screenHeight" min="1440" max="3800" step="10" placeholder="1440-3800px" required>
+                </div>
+                <div class="input-group">
+                    <label for="processorSpeed">Processor Speed (GHz):</label>
+                    <input type="number" id="processorSpeed" name="processorSpeed" min="1.5" max="4.0" step="0.1" placeholder="1.5-4.0GHz" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Predict Price</button>
+                </div>
+            </form>
+            <div id="predictionResult"></div>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
