@@ -1,4 +1,4 @@
-![PPP_website]([https://github.com/Naizes39/PhonePricePrediction/assets/155527394/025246e4-9172-4f3f-9506-b8006bb3eaaa](https://github.com/Naizes39/PhonePricePrediction/blob/master/PPP_website.png))
+![Uploading PPP_website.png…]()
 
 # Phone Price Prediction Website
 
