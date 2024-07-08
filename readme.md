@@ -25,7 +25,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Naizes39/PhonePricePrediction.git
-   cd phone_prediction/server
+   cd PhonePricePrediction/server
 
 2. Install the required Python dependencies from server directory:
     pip install -r requirements.txt
